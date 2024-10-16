@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback form</title>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+    <form>
+        <label for = "feedback-type"> Feedback  Type:</label>
+        <select id = "feedback-type" name = "feedback-type">
+            <option value ="positive">Positive</option>
+            <option value ="negative">Negative</option>
+            <option value ="neutral">Neutral</option>
+        </select>
+        <br><br>
+        <label for = "message"> Message:</label>
+        <textarea id ="message" name ="message" rows="4" cols ="50" placeholder ="Write your feedback here"></textarea>
+        <br><br>
+        <label>Rate the website:</label>
+        <input type ="radio" id ="excellent" name ="rating" value ="5">
+        <label for = "excellent">Excellent</label>
+        <input type ="radio" id ="excellent" name ="rating" value ="4">
+        <label for = "excellent">Good</label>
+        <input type ="radio" id ="excellent" name ="rating" value ="3">
+        <label for = "excellent">Average</label>
+        <input type ="radio" id ="excellent" name ="rating" value ="2">
+        <label for = "excellent">Poor</label>
+        <input type ="radio" id ="excellent" name ="rating" value ="1">
+        <label for = "excellent">Very poor</label>
+        <br><br>
+        <label for="age"> Age (10 - 100):</label>
+        <input type ="number" id ="age" name="age" min ="10" max ="100">
+        <br><br>
+        <label for="email"> Email:</label>
+        <input type ="email" id ="email" name="email" required>
+        <br><br>
+        <label for="password"> Password:</label>
+        <input type ="password" id ="password" name="password" required>
+        <br><br>
+        <label for="weebsite"> Website URL(optional):</label>
+        <input type ="url" id ="website" name="website" >
+        <br><br>
+        <label for="terms">
+            <input type ="checkbox" id ="terms" name="terms" required>I agree to the terms and conditions
+        </label>
+        <br><br>
+        <input type ="submit" value = "submit">
+    </form>
+</body>
+</html>
