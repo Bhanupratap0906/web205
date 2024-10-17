@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .oval-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 10px auto;
+    }
+
+    .oval-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .info {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .rating {
+      font-size: 24px;
+      color: gold;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-title">Panda Card</div>
+    
+    <div class="oval-photo">
+      <img src="https://example.com/panda.jpg" alt="Panda Photo">
+    </div>
+    
+    <div class="name">John Doe</div>
+    
+    <div class="info">Computer Science 1</div>
+    <div class="info">Computer Science 2</div>
+    <div class="info">Year 3</div>
+    
+    <div class="rating">★★★★★</div>
+  </div>
+
+</body>
+</html>
