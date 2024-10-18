@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Maggi Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            display: flex;
+            width: 800px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-section {
+            width: 50%;
+            padding: 40px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .left-section img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .left-section h1 {
+            margin: 0 0 20px 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .left-section button {
+            background-color: #4267b2;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .left-section button:nth-child(3) {
+            background-color: #db4437;
+        }
+
+        .left-section input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .right-section {
+            width: 50%;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .right-section h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .right-section button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .right-section ul {
+            padding-left: 20px;
+        }
+
+        .right-section ul li {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+            list-style: none;
+            position: relative;
+        }
+
+        .right-section ul li:before {
+            content: "✔";
+            color: green;
+            margin-right: 10px;
+            position: absolute;
+            left: -20px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="left-section">
+                <img src="maggi-logo.png" alt="Maggi Logo">
+                <h1>Welcome back!</h1>
+                <button>Sign in with Facebook</button>
+                <button>Sign in with Google</button>
+                <input type="email" placeholder="Enter your e-mail address here">
+                <input type="password" placeholder="Enter your password here">
+            </div>
+            <div class="right-section">
+                <h2>Not registered yet?</h2>
+                <button>Register</button>
+                <ul>
+                    <li>Your personal newsletter with exciting recipes and ideas</li>
+                    <li>Personalize your newsletter to your preferences</li>
+                    <li>Get to know about Maggi products</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
