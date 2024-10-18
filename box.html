@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover box</title>
+    <style>
+        .box-container{
+            display :flex;
+            justify-content:space-around;
+            margin-top:100;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color:lightgrey;
+            border: 1px solid black;
+            transition: all 0.3s ease;
+        }
+        .box:nth-child(3):hover{
+            width:200px;
+            height:200px;
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class ="box-container">
+        <div class ="box"></div>
+        <div class ="box"></div>
+        <div class ="box"></div>
+        <div class ="box"></div>
+        <div class ="box"></div>
+    </div>
+</body>
+</html>
