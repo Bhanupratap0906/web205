@@ -17,6 +17,36 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            position: relative;
+        }
+
+        
+        .side-menu {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #333;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .side-menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+            background-color: #444;
+            transition: background-color 0.3s;
+        }
+
+        .side-menu a:hover {
+            background-color: #555;
         }
 
         .login-container {
@@ -33,33 +63,48 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center; 
         }
 
         .left-section img {
-            width: 100px;
+            width: 150px;
             margin-bottom: 20px;
+            display: block;
         }
 
         .left-section h1 {
-            margin: 0 0 20px 0;
+            margin: 20px 0;
             font-size: 24px;
             color: #333;
         }
 
         .left-section button {
-            background-color: #4267b2;
-            color: white;
             border: none;
             padding: 10px;
             width: 100%;
             margin-bottom: 10px;
             cursor: pointer;
             font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .left-section button:nth-child(3) {
-            background-color: #db4437;
+        .left-section button img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .left-section button.facebook {
+            background-color: #4267b2;
+            color: white;
+        }
+
+       
+        .left-section button.google {
+            background-color: white;
+            color: #333;
+            border: 1px solid #ccc;
         }
 
         .left-section input {
@@ -115,13 +160,22 @@
     </style>
 </head>
 <body>
+    
+    <div class="side-menu">
+        <a href="#">Recipes</a>
+        <a href="#">Maggi</a>
+        <a href="#">MyMenu</a>
+        <a href="#">Search</a>
+        <a href="#">Login</a>
+    </div>
+
     <div class="container">
         <div class="login-container">
             <div class="left-section">
-                <img src="maggi-logo.png" alt="Maggi Logo">
+                <img src="data:image/png;base64,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" alt="Maggi Logo">
                 <h1>Welcome back!</h1>
-                <button>Sign in with Facebook</button>
-                <button>Sign in with Google</button>
+                <button class="facebook"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEU7V53///81U5tQZ6X19/rQ1eQpS5hXbKfd4Ovx8vdFX6HByNx6ibb6+vw5VZwdRJSpss+Kl78wT5kLO5FgdKzk5/BLY6OjrcxwgrOTn8S2vtbHzd9leK6apMaBj7rW2+gALItbzs1yAAADVUlEQVR4nO3c2W6jMACFYddJHJZgwKyBJPT9n3LSWW46pQZS4wM6/22FxCcXE8wiEqXFLtIqEXHhey9+qiIWufK9Ez+VykUpfe/ETyVL33vAGGOMMcYYY4yxSWkpjfqcMUY+05taEDMqNXXZXvL8er3frx/lef64XNr2Vp7r599Vuom1F21SU+ZN1w9VeEze/pUkxzCsqioYTn3cdVlzxh8emao264PwzdoFfWhkETWnKrFL8DG6iLpwmgQeo4pssgQcI4t2hgQao2XUz7PgYrRsJ8xf28BIfZ1tQcVI0cy3gGK0bI7zLaAYdZ0zI2Nj1GXJuGBipF40LpiY92qZBRFTNAstgBhzXvhPBojR6WmpBQ+jHgvOlqAYLef+ugTGvDIwaBhtuuUWNIy5BfvBqPsLFjCMjOL9YEy79JcMIEblr1iwMFpkM3Y9+RwWRh6mnTGTKhj6rss+1UE9tWjKKYfM8ZS1kUq/CMnyPP4nWIY8ShXUbn+dedgt8RlrAMbS0n7KjCPjezenNWEyq8qNWIS2Ly5fDf7NsT/JyHaRGWxmYISubTNzJ7YyMEJaMfftvJggD5arzPCxI0zVbuaQeWIsS8zBbRPny99ZMcN2JjM75nTe0cgQ4yliUCMGNWJQIwY1YlAjBjViUCPGc6PreC9ivKwP/v8OzN/SyIap07FtP1p/2HSUBaN9b3k7jm/5bFh/VU2/dqv/m8I9YYLbjjD9+nOdO0wX7QiT+ZjNXGGa9e93uMNcd4TxcSfKGcbHnShnmMHDY0DOMH29/i9NZ5jYw+WBM0yX7gjT7Ahz9HCacYbx8sCDK4yXBx5cYYbDjmazk/SwoOEKE3uYzJxhfJxmXGESH6cZV5jQywd/XWG8PIrmCFN5WYZ2hAm8fN/IEWbwcfy7wvRevl7uCOPlNCNk1B3DkWyfNEjGNgxDHxcAH9WHkeqb7f7MbXTbyNOj6HIsU9swBzO2Ldxj9Vu8pzkaMagRgxoxqBGDGjGoEYMaMagRgxoxqBGDGjGoEYMaMagRgxoxqBGDGjGoEYMaMagRgxoxqBGDGjGoEYMaMagRgxoxqBGDGjGoEYMaMagRgxoxs1rxOzuOMbIUK77N7RijchGv92qqY0wRi0St9tagW4xWyS9THEsQy9aq8wAAAABJRU5ErkJggg==" alt="Facebook Icon"> Sign in with Facebook</button>
+                <button class="google"><img src="data:image/png;base64,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" alt=""> Sign in with Google</button>
                 <input type="email" placeholder="Enter your e-mail address here">
                 <input type="password" placeholder="Enter your password here">
             </div>
