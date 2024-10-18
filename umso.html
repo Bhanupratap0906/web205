@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>umso</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            position: absolute;
+            top: 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        .navbar a:hover {
+            color: #7f00ff;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 700px;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin: 0;
+        }
+
+        h1 span {
+            color: #7f00ff;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 10px 0 30px;
+            color: #bbb;
+        }
+
+        .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .input-group input {
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            width: 70%;
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+
+        .input-group button {
+            background-color: #7f00ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .input-group button:hover {
+            background-color: #5a00cc;
+        }
+
+        .ratings {
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        .ratings span {
+            color: #00d563;
+            font-weight: bold;
+        }
+
+        .ratings img {
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        .footer a {
+            color: #7f00ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo"><img height ="50px" width ="100px"src="data:image/jpeg;base64,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"/>
+            Umso
+        </div>
+        <div>
+            <a href="#">Pricing</a>
+            <a href="#">Features</a>
+            <a href="#">Showcase</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Get your <span>AI Generated Website</span> In Seconds</h1>
+        <p>Give it a try right below, without having to sign up!</p>
+        <div class="input-group">
+            <input type="text" placeholder="Vegan Pizza Restaurant in..." />
+            <button>Generate</button>
+        </div>
+        <div class="ratings">
+            Excellent <span>4.8 out of 5</span> based on 85 reviews 
+            <img src="data:image/png;base64,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" alt="Trustpilot Logo" width="80">
+        </div>
+        <div class="footer">
+            Made with <img height ="20px" width ="50px"src="data:image/jpeg;base64,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"/>umso</a>
+        </div>
+    </div>
+
+</body>
+</html>
