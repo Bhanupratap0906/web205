@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi Store</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+        header { background-color: #ff6600; padding: 15px; }
+        nav { display: flex; align-items: center; justify-content: space-between; }
+        .nav-left { display: flex; align-items: center; gap: 20px; }
+        .nav-right { display: flex; gap: 30px; }
+        .logo img { width: 40px; height: auto; }
+        .store { color: #ff6600; font-weight: bold; }
+        .nav-item { color: white; font-weight: bold; cursor: pointer; }
+        .nav-item:hover { opacity: 0.8; }
+        .products { display: flex; justify-content: space-around; padding: 20px; background-color: white; }
+        .product { width: 20%; text-align: center; background-color: #f4f4f4; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .product img { width: 100px; height: auto; }
+        .price { font-size: 1.2em; font-weight: bold; color: #ff6600; }
+        .original-price { text-decoration: line-through; color: gray; }
+        .discount { color: red; font-weight: bold; }
+        .promotion { background-color: #ffe3cc; text-align: center; padding: 20px; margin: 20px 0; }
+        .promotion h2 { margin: 0; }
+        .promotion button { background-color: #ff6600; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        .promotion button:hover { background-color: #ff8533; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="mi-logo.png" alt="Mi Logo">
+                </div>
+                <div class="store">Store</div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-item">Phone</div>
+                <div class="nav-item">TV & Smart Home</div>
+                <div class="nav-item">Tablet</div>
+                <div class="nav-item">Lifestyle</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="redmi-earphones.jpg" alt="Redmi Earphones">
+                <p>Redmi Earphones</p>
+                <span class="discount">25% off</span>
+                <p class="price">₹449 <span class="original-price">₹599</span></p>
+            </div>
+            <div class="product">
+                <img src="mi-dual-driver.jpg" alt="Mi Dual Driver In-ear Earphones">
+                <p>Mi Dual Driver In-ear Earphones</p>
+                <span class="discount">20% off</span>
+                <p class="price">₹799 <span class="original-price">₹999</span></p>
+            </div>
+            <div class="product">
+                <img src="redmi-sonic.jpg" alt="Redmi Sonic Bass Wireless Earphones 2">
+                <p>Redmi Sonic Bass Wireless Earphones 2</p>
+                <span class="discount">56% off</span>
+                <p class="price">₹1,299 <span class="original-price">₹2,999</span></p>
+            </div>
+            <div class="product">
+                <img src="mi-speaker.jpg" alt="Mi Portable Bluetooth Speaker (16W)">
+                <p>Mi Portable Bluetooth Speaker (16W)</p>
+                <span class="discount">28% off</span>
+                <p class="price">₹2,499 <span class="original-price">₹3,499</span></p>
+            </div>
+        </section>
+
+        <section class="promotion">
+            <h2>Save Up to 65% On Chargers & Cables</h2>
+            <p>Free Delivery on All Products</p>
+            <button>Buy Now</button>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <img src="xiaomi-120w.jpg" alt="Xiaomi 120W HyperCharge Adapter">
+                <p>Xiaomi 120W HyperCharge Adapter</p>
+                <span class="discount">50% off</span>
+                <p class="price">₹2,999 <span class="original-price">₹5,999</span></p>
+            </div>
+            <div class="product">
+                <img src="mi-2a-charger.jpg" alt="Mi 2A Fast Charger with Cable">
+                <p>Mi 2A Fast Charger with Cable</p>
+                <span class="discount">25% off</span>
+                <p class="price">₹449 <span class="original-price">₹599</span></p>
+            </div>
+            <div class="product">
+                <img src="soniccharge-2.0.jpg" alt="Xiaomi SonicCharge 2.0 Cable">
+                <p>Xiaomi SonicCharge 2.0 Cable</p>
+                <span class="discount">64% off</span>
+                <p class="price">₹249 <span class="original-price">₹699</span></p>
+            </div>
+            <div class="product">
+                <img src="mi-18w-charger.jpg" alt="Mi 18W Dual Port Charger">
+                <p>Mi 18W Dual Port Charger + Mi USB Cable 120cm</p>
+                <span class="discount">35% off</span>
+                <p class="price">₹899 <span class="original-price">₹1,397</span></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
