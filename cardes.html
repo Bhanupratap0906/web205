@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+        }
+        
+        h1{
+            text-align: center;
+        }
+        .containers{
+            display: flex;
+            align-items: center;
+        }
+        .box{
+            width:100px;
+            height :100px;
+            margin :10px;
+            transition:opacity 0.3s;
+        }
+        .yellow{
+            background-color: rgb(255, 255, 188);
+        }
+        .pink{
+            background-color: rgb(255, 224, 250);
+        }
+        .red{
+            background-color: rgb(255, 118, 118);
+        }
+        .green{
+            background-color: rgb(2, 187, 2);
+        }
+        .box:not(:hover){
+            opacity:0.7;
+        }
+        .box:hover{
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <h1>CARDS</h1>
+    <div class = "containers">
+        <div class="box yellow" ></div>
+        <div class="box pink"></div>
+        <div class = "box red"></div>
+        <div class ="box green" ></div>
+    </div>
+</body>
+</html>
