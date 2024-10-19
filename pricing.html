@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .pricing-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-header p {
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        .pricing-options {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .plan {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            padding: 30px;
+            flex: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .plan h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .plan p {
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .price {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .price span {
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .plan ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .plan ul li:before {
+            content: "✓";
+            color: #6d73ff;
+            margin-right: 10px;
+        }
+
+        .plan .excluded {
+            color: #777;
+            text-decoration: line-through;
+        }
+
+        .toggle-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+
+        .toggle-buttons button {
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            color: #aaa;
+            cursor: pointer;
+            margin-right: 20px;
+            outline: none;
+        }
+
+        .toggle-buttons button.active {
+            color: white;
+        }
+
+        .btn {
+            background-color: #6d73ff;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #565bf1;
+        }
+
+        .plan-basic {
+            background-color: #121212;
+            border: 1px solid #333;
+        }
+
+        .plan-basic h2, .plan-basic .btn {
+            color: white;
+        }
+
+        .plan-basic ul li:before {
+            content: "—";
+            color: #ff6b6b;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="pricing-header">
+        <h1>One Price for Everything</h1>
+        <p>The simplest pricing in the industry. You won’t need a calculator for this.</p>
+    </div>
+
+    
+
+    <div class="pricing-options">
+        
+        <div class="plan">
+            <div class="toggle-buttons">
+                <h2>Pro</h2>
+                <button class="active">Bill Monthly</button>
+                <button>Bill Yearly</button>
+            </div>
+            <p>Includes everything you need for your professional website</p>
+            <div class="price">$20 <span>/ Site / Month (billed annually)</span></div>
+            <ul>
+                <li>Custom Domains</li>
+                <li>GDPR Solution</li>
+                <li>Beautiful Site Design</li>
+                <li>Super-Fast Hosting</li>
+                <li>Analytics</li>
+                <li>Custom Forms</li>
+                <li>Blogging</li>
+                <li>Password Protection</li>
+                <li>Multilingual Sites</li>
+                <li>User Management</li>
+                <li>Unlimited Pages</li>
+                <li>Unlimited Team Members</li>
+            </ul>
+            <a href="#" class="btn">Get Started →</a>
+        </div>
+
+       
+        <div class="plan plan-basic">
+            <h2>Basic</h2>
+            <p>Publish your site for free with almost all pro features.</p>
+            <div class="price">Free</div>
+            <ul>
+                <li class="excluded">No Custom Domains</li>
+                <li class="excluded">"Made with Umso" Branding</li>
+            </ul>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
